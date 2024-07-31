@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              {/* <ProductCard id={1} name="Pizza" price={12} imageUrl="/cards/pizza.png"/> */}
+              
               <ProductsGroupList
                 title="Pizzas"
                 categoryId={1}
@@ -63,8 +63,48 @@ export default function Home() {
                   },
                 ]}
               />
-              {/* <ProductGroupList title={'Pizzas'} items={[1,2,3,4,5]}/>
-              <ProductGroupList title={'Combos'} items={[1,2,3,4,5]}/> */}
+              <ProductsGroupList
+                title="Combos"
+                categoryId={2}
+                items={[
+                  {
+                    id: 1,
+                    name: "Pizza",
+                    price: 12,
+                    imageUrl: "/cards/pizza.png",
+                    items: [{ price: 12 }],
+                  },
+                  {
+                    id: 2,
+                    name: "Pizza",
+                    price: 12,
+                    imageUrl: "/cards/pizza.png",
+                    items: [{ price: 12 }],
+                  },
+                  {
+                    id: 3,
+                    name: "Pizza",
+                    price: 12,
+                    imageUrl: "/cards/pizza.png",
+                    items: [{ price: 12 }],
+                  },
+                  {
+                    id: 4,
+                    name: "Pizza",
+                    price: 12,
+                    imageUrl: "/cards/pizza.png",
+                    items: [{ price: 12 }],
+                  },
+                  {
+                    id: 5,
+                    name: "Pizza",
+                    price: 12,
+                    imageUrl: "/cards/pizza.png",
+                    items: [{ price: 12 }],
+                  },
+                ]}
+              />
+              
             </div>
           </div>
         </div>
